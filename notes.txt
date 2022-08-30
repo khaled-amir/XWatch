@@ -1,0 +1,2 @@
+main backgroundColor = #0f0a05
+secondary Color = #1F4690
