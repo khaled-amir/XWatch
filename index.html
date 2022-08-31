@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Lalezar&display=swap" rel="stylesheet">
@@ -16,11 +17,11 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <h1><span>X</span>Watch</h1>
+                <h1><span>I</span>Watch</h1>
             </div>
             <div class="nav">
-                <a href="" class="btn">تسجيل دخول</a>
-                <a href="" class="btn">انشاء حساب</a>
+                <a href="" class="btn" id="login">تسجيل دخول</a>
+                <a href="" class="btn" id="signup">انشاء حساب</a>
             </div>
         </div>
         <div class="intro">
@@ -39,27 +40,112 @@
         <div class="introBtn">
             <div class="btns">
                 <a href="" class="btn">ابدأ التجربة دلوقتي</a>
-                <a href="" class="btn">خطط الاشتراك</a>
+                <a href="" class="btn" id="plansBtn">خطط الاشتراك</a>
             </div>
         </div>
         <div class="adv">
-            <h2 id="title">ليه تشترك في <span>X</span>Watch</h2>
+            <h2 id="title">ليه تشترك في <span>I</span>Watch</h2>
             <div class="advList">
                 <div class="ad">
                     <h1><i class="fa-solid fa-coins"></i></h1>
-                    <h2>السعر رخيص</h2>
+                    <h1>السعر رخيص</h1>
                     <p>ثمن الاشتراك بيكون 20 جنيه بس كل شهر وبتقدر ان انت توصل لكل محتوي الموقع</p>
                 </div>
                 <div class="ad">
                     <h1><i class="fa-solid fa-tv"></i></h1>
-                    <h2>محتوي متعدد</h2>
+                    <h1>محتوي متعدد</h1>
                     <p>محتوي الموقع متعدد وبه العديد من الفئات والقوائم النادرة والمناسبة لجميع الأعمار</p>
                 </div>
                 <div class="ad">
                     <h1><i class="fa-solid fa-mobile"></i></h1>
-                    <h2>مناسب لجميع الأجهزة</h2>
+                    <h1>مناسب لجميع الأجهزة</h1>
                     <p>يمكنك الاستمتاع بالمشاهدة من خلال أي جهاز بدون قيود</p>
                 </div>
+            </div>
+        </div>
+        <div class="steps">
+            <h2 id="title">ازاي تشترك في <span>I</span>Watch</h2>
+            <div class="stepsList">
+                <div class="step">
+                    <h1><i class="fa-solid fa-circle-user"></i></h1>
+                    <h1>انشئ حسابك</h1>
+                    <p>انشئ حسابك باستخدام رقم تليفونك وكلمة المرور</p>
+                </div>
+                <div class="step">
+                    <h1><i class="fa-solid fa-credit-card"></i></h1>
+                    <h1>اختر طريقة الدفع وادخل بيانات الدفع</h1>
+                    <p>بنوفرلك لأكتر من طريقة تقدر تدفع بيها اشتراكك بكل سهولة وتقدر تختار الطريقة اللي تناسبك</p>
+                </div>
+                <div class="step">
+                    <h1><i class="fi fi-ss-popcorn"></i></h1>
+                    <h1>استمتع بالمشاهدة</h1>
+                    <p>بعد اتمام عملية الدفع المقدم بمكنك الاستمتاع بمشاهدة كل ما تحب بدون قيود</p>
+                </div>
+            </div>
+        </div>
+        <div class="apps">
+            <h1 id="title">التطبيقات الرسمية ل <span>I</span>Watch</h1>
+            <div class="downDiv">
+                <div class="downloadIcons">
+                    <a href="https://play.google.com/store/apps/details?id=com.watchit.vod"><img src="images/googlePlay.png" alt=""></a>
+                    <a href="https://apps.apple.com/eg/app/watch-it-drama-movies/id1462196003"><img src="images/appStore.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="oldS">
+            <div class="imgBox">
+                <img src="images/oldS.jpg" alt="">
+            </div>
+            <div class="textBox">
+                <h1 id="fTitle">استمتع بمشاهدة جميع أعمال الزمن الجميل</h1>
+                <p>نمتلك مكتبة واسعة تحتوي علي جميع أعمال الزمن الجميل</p>
+            </div>
+        </div>
+        <div class="kids">
+            <div class="imgBox">
+                <img src="images/cartoon.jpg" alt="">
+            </div>
+            <div class="textBox">
+                <h1 id="fTitle"><span>KIDS</span>Area</h1>
+                <p id="kidsP">مكتبة كاملة مخصصة لبرامج الأطفال</p>
+            </div>
+        </div>
+        <div class="subBanner">
+            <div class="subDiv">
+                <div class="textBox">
+                    <h1>استمتع بتجربة مشاهدة ليس لها مثيل</h1>
+                </div>
+                <div class="btns">
+                    <a href="" class="btn">اشترك الان</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerLinks">
+                <ul>
+                    <li><a href="">الدعم الفني</a></li>
+                    <li><a href="">الشروط والأحكام</a></li>
+                    <li><a href="">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <div class="socialLinks">
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
             </div>
         </div>
     </div>

@@ -1,3 +1,8 @@
+:root {
+    --mainColor: #0f0a05;
+    --secColor: #f3b92f;
+    --thirdColor: rgba(255, 255, 255, 0.2);
+}
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +11,7 @@
 body {
     direction: rtl;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
-    background-color: #0f0a05;
+    background-color: var(--mainColor);
     color: white;
 }
 .container {
@@ -23,14 +28,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #0f0a05;
+    background-color: var(--mainColor);
 }
 .container .header .logo h1 {
     color: white;
 }
 .container .header .logo h1 span {
-    color: #1F4690;
-    font-size: 25px;
+    color: var(--secColor);
     font-weight: 900;
 }
 .nav :first-child {
@@ -39,12 +43,21 @@ body {
 .btn {
     width: 240px;
     height: 40px;
-    background-color: #1F4690;
+    background-color: var(--secColor);
     padding: 15px;
     border-radius: 5px;
-    color: white;
     text-align: center;
     text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn:hover {
+    background-color: #ffb300;
+}
+.container .header #login {
+    background-color: var(--thirdColor);
+    color: white;
 }
 .container .intro {
     margin-top: 120px;
@@ -59,7 +72,7 @@ body {
     font-size: 70px;
 }
 .container .intro h1 span {
-    color: #1F4690;
+    color: var(--secColor);
 }
 .container .introBtn {
     width: 100%;
@@ -67,9 +80,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 .container .introBtn .btns :first-child {
     margin-left: 15px;
+}
+#plansBtn {
+    background-color: var(--thirdColor);
+    color: white;
 }
 .container .introIMG {
     width: 100%;
@@ -85,31 +103,198 @@ body {
 }
 .container .adv{
     text-align: center;
-    padding-bottom: 200px;
+    padding-bottom: 80px;
 }
-.container .adv #title {
+#title {
     font-size: 35px;
     margin-bottom: 40px;
+    text-align: center;
+    display: block;
 }
-.container .adv #title span {
-    color: #1F4690;
-    font-size: 25px;
+#title span {
+    color: var(--secColor);
     font-weight: 900;
 }
-.container .adv .advList {
+.container .adv .advList,
+.container .steps .stepsList {
     width: 100%;
     height: 250px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.container .adv .advList .ad {
+.container .adv .advList .ad,
+.container .steps .stepsList .step {
     height: 100%;
-    background-color: #333;
+    width: calc(100% / 4);
+    background-color: var(--thirdColor);
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 5px;
+}
+.container .adv .advList .ad i,
+.container .steps .stepsList .step i {
+    color: var(--secColor);
+}
+.container .steps {
+    margin-bottom: 80px;
+}
+.apps {
+    padding-bottom: 200px;
+}
+.container .apps .downDiv {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .apps .downDiv #title {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 80px;
+}
+.container .apps .downDiv .downloadIcons {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container .apps .downDiv .downloadIcons a {
+    height: 100%;
+    width: 100px;
+}
+.container .apps .downDiv .downloadIcons a img {
+    width: 100%;
+    height: 100%;
+}
+.apps #subtitle {
+    padding: 50px;
+    font-size: 35px;
+    display: block;
+}
+#subtitle span {
+    color: var(--secColor);
+}
+.oldS,
+.kids {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kids {
+    flex-direction: row-reverse;
+}
+.oldS .imgBox,
+.oldS .textBox,
+.kids .imgBox,
+.kids .textBox {
+    width: 50%;
+}
+.oldS .imgBox img,
+.kids .imgBox img {
+    width: 100%;
+    height: 100%;
+}
+.oldS .textBox h1 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.kids .textBox,
+.oldS .textBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.oldS .textBox h1,
+.kids .textBox h1{
+    margin-bottom: 20px;
+}
+#fTitle {
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+#fTitle span {
+    color: var(--secColor);
+}
+.subBanner {
+    margin: 100px 0;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subBanner .subDiv {
+    width: 80%;
+    height: 100%;
+    background-color: #ffffff0f;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.subBanner .subDiv .textBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    width: 100%;
+    height: 200px;
+}
+.footer .footerLinks {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.footer .footerLinks ul {
+    list-style-type: none;
+}
+.footer .footerLinks ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer .footerLinks ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.footer .footerLinks ul li a:hover {
+    text-decoration: underline;
+}
+.footer .social {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .social .socialLinks {
+    width: 28%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .social .socialLinks a {
+    color: white;
+    font-size: 30px;
+}
+.footer .social .socialLinks a:hover {
+    color: var(--secColor);
 }
