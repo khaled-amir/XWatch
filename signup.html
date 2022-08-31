@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | IWatch</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Lalezar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1><span>I</span>Watch</h1>
+            </div>
+            <div class="nav">
+                <a href="login.html" class="btn" id="login">تسجيل دخول</a>
+                <a href="signup.html" class="btn" id="signup">انشاء حساب</a>
+            </div>
+        </div>
+        <div class="formContainer">
+            <h1 id="title">
+               انشاء حساب جديد في <span>I</span>Watch
+            </h1>
+            <div class="formParent">
+                <div class="formBox" id="step1">
+                    <form action="">
+                        <h2>انشاء حساب</h2>
+                        <div class="formField">
+                            <label for="phone">رقم التليفون</label>
+                            <input type="tel" name="phone" id="phone">
+                            <label for="pass">عين كلمة مرور لحسابك</label>
+                            <input type="password" name="pass" id="pass">
+                        </div>
+                        <div>
+                            <a class="btn" id="btn1">تسجيل</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="formBox step2" id="step2">
+                    <form action="">
+                        <h2>الدفع</h2>
+                        <div class="formField">
+                            <!-- <label for="method">اختر طريقة الدفع</label>
+                            <select name="method" id="method">
+                                <option value="FWRY">فوري</option>
+                                <option value="CARD">بطاقة ائتمانية</option>
+                            </select> -->
+                            <label for="CardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" placeholder="Card Number">
+                            <label for="exp">Expiration Date</label>
+                            <div class="exp">
+                                <input type="number" name="expM" id="expM" placeholder="MM">
+                                /
+                                <input type="number" name="expY" id="expY" placeholder="YY">
+                            </div>
+                            <label for="cvc">CVC</label>
+                            <input type="number" name="cvc" id="cvc" placeholder="CVC">
+                        </div>
+                        <div>
+                            <a class="btn" id="btn2">تسجيل</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="formBox" id="step3">
+                    <h2>التأكيد</h2>
+                    <div class="confirmation">
+                        <img src="images/correct.png" alt="">
+                        <h1>كل شئ تمام</h1>
+                        <p>تقدر دلوقتي تستمتع بتجربة المشاهدة بدون اي عوائق او اعلانات</p>
+                    </div>
+                    <div>
+                        <a class="btn" id="btn3">ابدأ المشاهدة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

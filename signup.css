@@ -1,0 +1,182 @@
+:root {
+    --mainColor: #0f0a05;
+    --secColor: #f3b92f;
+    --thirdColor: rgba(255, 255, 255, 0.2);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    direction: rtl;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background-color: var(--mainColor);
+    color: white;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.container .header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--mainColor);
+}
+.container .header .logo h1 {
+    color: white;
+}
+.container .header .logo h1 span {
+    color: var(--secColor);
+    font-weight: 900;
+}
+.nav :first-child {
+    margin-left: 15px;
+}
+.btn {
+    width: 240px;
+    height: 40px;
+    background-color: var(--secColor);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn:hover {
+    background-color: #ffb300;
+}
+.container .header #login {
+    background-color: var(--thirdColor);
+    color: white;
+}
+.container .formContainer {
+    width: 100%;
+    margin-top: 50px;
+    height: calc(100% - 150px);
+    margin-top: 150px;
+    padding: 30px;
+}
+#title {
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: block;
+}
+#title span {
+    color: var(--secColor);
+    font-weight: 900;
+}
+.container .formContainer .formParent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container .formContainer .formParent .formBox {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    background-color: #ffffff0f;
+    border-radius: 5px;
+    padding: 30px;
+}
+.container .formContainer .formParent .formBox h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--secColor);
+}
+.container .formContainer .formParent .formBox form .formField {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+}
+.container .formContainer .formParent .formBox form  label {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.container .formContainer .formParent .formBox  input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.container .formContainer .formParent .formBox   input:focus {
+    border: 1px solid var(--secColor);
+}
+.container .formContainer .formParent .formBox  a {
+    width: 90%;
+    height: 50px;
+    border: none;
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: var(--secColor);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+label {
+    margin-bottom: 20px !important;
+}
+#CardNumber {
+    margin-top: 20px;
+}
+#step2 {
+    height: 700px;
+    display: none;
+}
+.exp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exp input {
+    width: 40%;
+    margin: 15px;
+}
+#step3 {
+    display: none;
+}
+#step3 .confirmation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#step3 img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;
+}
+#step3 .confirmation h1 {
+    color: #4bae4f;
+    margin-bottom: 20px;
+}
